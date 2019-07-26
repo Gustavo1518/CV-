@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>CV GUSTAVO MENESES SIERRA</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<link rel="stylesheet" href="assets/fonts/style.css"/>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+			<div id="bg"></div>
+			<div id="main">
+					<header id="header">
+						<h1>{{Nombre}}</h1>
+						<p> &nbsp;&bull;&nbsp; {{Carrera}}</p>
+						<nav>
+							<ul>
+								<li><a target="_blanck" href="#" class="icon-whatsapp"><span>Twitter</span></a></li>
+								<li><a target="_blanck" href="https://www.facebook.com/gustavo.menesessierra" class="icon-facebook"><span>Facebook</span></a></li>
+								<li><a target="_blanck" href="assets\Archivos\CV.pdf" class="icon-arrow-down"><span title="Descargar CV">Descargar CV</span></a></li>
+								<li><a target="_blanck" href="#" class="icon-github"><span>Github</span></a></li>
+								<li><a target="_blanck" href="#" class="icon-heart"><span>Me encanta</span></a></li></ul>
+								<ul>
+									<button v-on:click="aumentar">Like</button>
+									<h1 :style="{color: '', fontsise: numero + 'px'}"> !Gracias Por Tu Like¡  <ul> {{ Numero }}</ul> </h1>
+									
+								</ul>
+	
+						
+						</nav>
+
+						<p>
+							FALTA AGREGAR TEXTO PERSONAL
+						</p>
+							
+					</header>
+
+					<footer id="footer">
+						<span class="copyright">&copy; Conacyt <a>Elaborado por Gustavo Meneses Sierra</a>.</span>
+					</footer>
+
+			</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+<script src="cv.js"></script>
+	
+	</body>
+</html>
